@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="162.0" prefWidth="198.0" style="-fx-background-color: #2D3447;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="db.ProductPopupController">
+    
+   <children>
+      <TextField fx:id="name" layoutX="14.0" layoutY="14.0" promptText="NAME" />
+      <TextField fx:id="unitprice" layoutX="14.0" layoutY="50.0" promptText="UNIT PRICE" />
+      <TextField fx:id="quantity" layoutX="14.0" layoutY="84.0" promptText="QUANTITY" />
+      <Button fx:id="save" defaultButton="true" layoutX="131.0" layoutY="123.0" mnemonicParsing="false" onAction="#save" text="SAVE" />
+   </children>
+</AnchorPane>

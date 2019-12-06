@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="db.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+    
+    <children>
+      <ImageView fitHeight="457.0" fitWidth="617.0" layoutX="-3.0" layoutY="-3.0" opacity="0.44">
+         <image>
+            <Image url="@Images/heap-tablets-pills_23-2147796476.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" alignment="CENTER" layoutX="223.0" layoutY="167.0" prefHeight="35.0" prefWidth="191.0" promptText="Enter Your User Name">
+         <font>
+            <Font name="FTY STRATEGYCIDE NCV" size="12.0" />
+         </font></TextField>
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="223.0" layoutY="225.0" prefHeight="35.0" prefWidth="191.0" promptText="Enter Your Password">
+         <font>
+            <Font name="FTY STRATEGYCIDE NCV" size="12.0" />
+         </font></PasswordField>
+      <Button fx:id="login" alignment="CENTER" defaultButton="true" layoutX="264.0" layoutY="287.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="109.0" text="LOGIN" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="msg" layoutX="239.0" layoutY="105.0" prefHeight="44.0" prefWidth="159.0" text="Welcome!" textAlignment="JUSTIFY" textFill="#001e18" wrapText="true">
+         <font>
+            <Font name="FTY STRATEGYCIDE NCV" size="39.0" />
+         </font></Label>
+      <Button fx:id="signup" alignment="CENTER" contentDisplay="CENTER" layoutX="441.0" layoutY="394.0" mnemonicParsing="false" onAction="#gotoSignup" prefHeight="25.0" prefWidth="137.0" text="Register Here" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="91.0" fitWidth="102.0" layoutX="260.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="235.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/user-male-circle-blue-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="235.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/key-password-pin-code-blue-round-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="18.0" layoutX="272.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/login-xxl.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="442.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/1-38-512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="442.0" layoutY="370.0" text="Don't have an account ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
